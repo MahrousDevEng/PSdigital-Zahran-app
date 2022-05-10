@@ -1,0 +1,72 @@
+.order-wrapper {
+  padding: 1rem;
+  border-radius: var(--bdRadius);
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px,
+    rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 992px) {
+  .order-wrapper {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.order {
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: var(--bdRadius);
+}
+.review {
+  margin-bottom: 1.25rem;
+}
+.review textarea {
+  margin-bottom: 1rem;
+  resize: none;
+  width: 100%;
+  height: 150px;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: var(--bdRadius);
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px,
+    rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px;
+}
+@media (max-width: 767px) {
+  .back {
+    position: fixed;
+    bottom: 80px;
+    right: 1.5rem;
+    z-index: 200;
+  }
+}
+.custom-file-input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: calc(var(--bdRadius) / 2);
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px,
+    rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Add Image';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: calc(var(--bdRadius) / 2);
+  padding: 0.5rem 1rem;
+  outline: none;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: 0.3s ease-in-out;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
